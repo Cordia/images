@@ -66,11 +66,8 @@ if [ -x /usr/sbin/prelink ]; then
 fi
 
 
-# Set symlink pointing to .desktop file 
-ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
 # Remove cursor from showing during startup BMC#14991
 echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
-
 
 # Set marina theme as default
 ln -s marina /usr/share/themes/default
