@@ -32,6 +32,7 @@ repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Ad
 @Mer Minimal Xorg
 
 kernel-adaptation-pc
+installer-shell
 
 openssh-clients
 openssh-server
