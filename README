@@ -2,3 +2,9 @@ This repository contains various KickStart (.ks) files used to build Cordia imag
 
 Example mic commandline:
 $ sudo mic create liveusb cordia-hd-i586.ks -o . --pkgmgr=yum --arch i686
+
+or
+$ sudo mic create raw cordia-hd-armv7hl-n900.ks -o cordia-hd-n900 --pkgmgr=yum --arch=armv7hl --copy-kernel
+
+or
+$ sudo mic create fs mer-sdk-x86-chroot-latest.ks -o . --pkgmgr=yum --arch i486 --compress-disk-image=tar.bz2
