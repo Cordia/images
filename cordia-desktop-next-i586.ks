@@ -7,12 +7,12 @@ xconfig --startxonboot
 bootloader  --timeout=0  --append="quiet" 
 user --name cordia --groups audio,video,wheel --password cordia
 
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo
-repo --name=cordia-desktop --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Desktop/Mer_Core_i586/ --save
-repo --name=cordia-apps --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Apps/Mer_Core_i586/ --save
-repo --name=cordia-tools --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Tools/Mer_Core_i586/ --save
-repo --name=mer-tools --baseurl=http://repo.pub.meego.com/Mer:/Tools/Mer_Core_i586/ --save --debuginfo --source
-repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/next/builds/i586/packages/ --save --debuginfo
+repo --name=cordia-desktop --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Desktop/Mer_Core_Next_i586/ --save
+repo --name=cordia-apps --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Apps/Mer_Core_Next_i586/ --save
+repo --name=cordia-tools --baseurl=http://repo.pub.meego.com//Project:/Cordia:/Tools/Mer_Core_Next_i586/ --save
+repo --name=mer-tools --baseurl=http://repo.pub.meego.com/Mer:/Tools/Mer_next_Core_i586/ --save --debuginfo --source
+repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core-next_i586/ --save
 
 %packages
 
